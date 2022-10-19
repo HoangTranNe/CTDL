@@ -1,0 +1,8 @@
+C:\CTDL\BaiTap\BaiTap\bin\Debug\BaiTap.exe.config
+C:\CTDL\BaiTap\BaiTap\bin\Debug\BaiTap.exe
+C:\CTDL\BaiTap\BaiTap\bin\Debug\BaiTap.pdb
+C:\CTDL\BaiTap\BaiTap\obj\Debug\DSLKDon.csproj.AssemblyReference.cache
+C:\CTDL\BaiTap\BaiTap\obj\Debug\DSLKDon.csproj.SuggestedBindingRedirects.cache
+C:\CTDL\BaiTap\BaiTap\obj\Debug\DSLKDon.csproj.CoreCompileInputs.cache
+C:\CTDL\BaiTap\BaiTap\obj\Debug\BaiTap.exe
+C:\CTDL\BaiTap\BaiTap\obj\Debug\BaiTap.pdb
