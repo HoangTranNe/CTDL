@@ -39,7 +39,7 @@ namespace BaiTap
             }
             else
             {
-                First.Next = first;
+                newNode.Next = first;
                 first = newNode;
             }
         }
