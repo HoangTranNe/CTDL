@@ -39,7 +39,7 @@ namespace BaiTap
             }
             else
             {
-                newNode.Next = first;
+                First.Next = first;
                 first = newNode;
             }
         }
@@ -48,11 +48,11 @@ namespace BaiTap
         {
             if (IsEmpty())
             {
-                first = last = newNode;
+                last = first = newNode;
             }
             else
             {
-                newNode.Next = last;
+                Last.Next = last;
                 last = newNode;
             }
         }
