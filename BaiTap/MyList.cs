@@ -46,7 +46,7 @@ namespace BaiTap
 
         public void AddLast(IntNode newNode)
         {
-            if (IsEmpty())
+            if (first==null)
             {
                 last = first = newNode;
             }
@@ -59,30 +59,39 @@ namespace BaiTap
 
         public void Input()
         {
-            int x;
-            do
+            int n, x;
+            Console.Write("So luong node = ");
+            n = int.Parse(Console.ReadLine());
+            for(int i =1; i <= n; i++)
             {
-                Console.Write("Gia Tri (0 ket thuc): ");
-                int.TryParse(Console.ReadLine(), out x);
-                if (x == 0)
-                {
-                    return;
-                }
+                Console.Write("Nhap Gia Tri = ");
+                x = int.Parse(Console.ReadLine());
                 IntNode newNode = new IntNode(x);
-                AddFirst(newNode);
-            } while (true);
+                AddLast(newNode);
+            }
         }
 
         public void ShowList()
         {
-            IntNode p = first;
-            while (p != null)
-            {
-                Console.Write("{0} -> ", p.Data);
-                p = p.Next;
-            }
-            Console.Write("null");
+           for(IntNode p = first; p!=null; p=p.Next)
+                Console.Write("{0} ->",p.Data);
         }
-
+        public int DemSL()
+        {
+            int d = 0;
+            for(IntNode p = first; p!= null; p = p.Next)
+            {
+                d++;
+            }
+            return d;
+        }
+        public IntNode TimMax()
+        {
+            IntNode pMax = first;
+            for (IntNode p = first.Next; p != null; p = p.Next)
+                if (p.Data > pMax.Data)
+                    pMax = p;
+            return pMax;
+        }
     }
 }
