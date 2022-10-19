@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -92,6 +93,77 @@ namespace BaiTap
                 if (p.Data > pMax.Data)
                     pMax = p;
             return pMax;
+        }
+        public IntNode TimX(int x)
+        {
+            for (IntNode p = first; p != null; p = p.Next)
+            {
+                if (p.Data == x)
+                {
+                    return p;
+                }
+            }
+            return null;
+        }
+        public void XuatChan()
+        {
+            for (IntNode p = first; p != null; p = p.Next)
+                if (p.Data % 2 == 0)
+                    Console.Write("{0}->", p.Data);
+        }
+        public double TBLe()
+        {
+            int s = 0, d = 0;
+            for(IntNode p = first; p!=null;p=p.Next)
+                if (p.Data % 2 != 0)
+                {
+                    s += p.Data;
+                    d++;
+                }
+            if (d == 0)
+                return 0;
+            return (double)s / d;
+        }
+        public void InsertAfterP(IntNode p, IntNode newNode)
+        {
+            if (p==last)
+                AddLast(newNode);
+            else
+            {
+                newNode.Next = p.Next;
+                p.Next = newNode;
+            }
+        }
+        public IntNode TimMin()
+        {
+            IntNode pMin = first;
+            for (IntNode p = first; p != null; p = p.Next)
+                if (p.Data < pMin.Data)
+                    pMin = p;
+            return pMin;
+        }
+        public void ChenXSauMin(int x)
+        {
+            IntNode p = TimMin();
+            IntNode newNode = new IntNode(x);
+            InsertAfterP(p, newNode);
+        }
+        public void Swap(IntNode a, IntNode b)
+        {
+            int tam = a.Data;
+            a.Data = b.Data;
+            b.Data = tam;
+        }
+        public void InserBeforeP(IntNode p, IntNode newNode)
+        {
+            InsertAfterP(p, newNode);
+            Swap(p, newNode);
+        }
+        public void ChenXTruocMin(int x)
+        {
+            IntNode p = TimMin();
+            IntNode newNode = new IntNode(x);
+            InserBeforeP(p, newNode);
         }
     }
 }
