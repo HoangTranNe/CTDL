@@ -70,7 +70,6 @@ namespace BaiTap
                 }
                 IntNode newNode = new IntNode(x);
                 AddFirst(newNode);
-                AddLast(newNode);
             } while (true);
         }
 

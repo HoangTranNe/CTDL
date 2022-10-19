@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSLKDon", "BaiTap\DSLKDon.csproj", "{4209BC40-9536-4986-ABAA-EB725336C406}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViDu2", "..\ViDu2\ViDu2\ViDu2.csproj", "{FC619809-2421-4D18-AD31-8A5E2EDFF591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4209BC40-9536-4986-ABAA-EB725336C406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4209BC40-9536-4986-ABAA-EB725336C406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4209BC40-9536-4986-ABAA-EB725336C406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC619809-2421-4D18-AD31-8A5E2EDFF591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC619809-2421-4D18-AD31-8A5E2EDFF591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC619809-2421-4D18-AD31-8A5E2EDFF591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC619809-2421-4D18-AD31-8A5E2EDFF591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
